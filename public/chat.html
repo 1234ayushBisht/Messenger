@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger - From ChatBook</title>
+    <link rel="stylesheet" href="./css/chat.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ChatBook-Messenger</h1>
+        <div class="main">
+            <div class="aside">
+                <h4>Room Name:</h4>
+                <h2 id="room-name"></h2>
+                <h3>Users</h3>
+                <ul id="users"></ul>
+            </div>
+            <div class="outputMsg">
+                
+            </div>
+        </div>
+        <div class="form">
+            <form id="myForm">
+                <input type="text" name="msg" id="inputMsg" placeholder="Enter your Message Here">
+                <input type="submit" value="Send" class="btn">
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" integrity="sha256-ijqLssetA1NMNjZ+w1zaUafQQLm4IW5OoM8O+4tatME=" crossorigin="anonymous"></script>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
